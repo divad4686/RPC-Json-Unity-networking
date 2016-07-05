@@ -1,0 +1,43 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UnitTesting/Editor/RPCManagerTest.cs">
+    <Files>
+      <File FileName="Assets/RPC Manager/IRPCHandler.cs" Line="26" Column="1" />
+      <File FileName="Assets/RPC Manager/RPCManager.cs" Line="32" Column="15" />
+      <File FileName="Assets/UnitTesting/Editor/RPCManagerTest.cs" Line="98" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RPC-Json-Unity-networking" expanded="True">
+            <Node name="Assembly-CSharp" expanded="True">
+              <Node name="RPC Manager" expanded="True" />
+              <Node name="Third party" expanded="True">
+                <Node name="MiniJSON" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Assembly-CSharp-Editor" expanded="True">
+              <Node name="UnitTesting" expanded="True">
+                <Node name="Editor" expanded="True">
+                  <Node name="RPCManagerTest.cs" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State name="__root__">
+          <Node name="RPC-Json-Unity-networking" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{DBEF0478-892E-A7E5-1ED8-9309A829C7CC}") = "RPC-Json-Unity-networking", "Assembly-CSharp.csproj", "{EEBB0A7D-5C23-CF78-7E35-BE62E98A8C05}"
+EndProject
+Project("{DBEF0478-892E-A7E5-1ED8-9309A829C7CC}") = "RPC-Json-Unity-networking", "Assembly-CSharp-Editor.csproj", "{330BF201-BC46-0457-B5CE-00255F64531B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEBB0A7D-5C23-CF78-7E35-BE62E98A8C05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEBB0A7D-5C23-CF78-7E35-BE62E98A8C05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEBB0A7D-5C23-CF78-7E35-BE62E98A8C05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEBB0A7D-5C23-CF78-7E35-BE62E98A8C05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330BF201-BC46-0457-B5CE-00255F64531B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330BF201-BC46-0457-B5CE-00255F64531B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330BF201-BC46-0457-B5CE-00255F64531B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330BF201-BC46-0457-B5CE-00255F64531B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
