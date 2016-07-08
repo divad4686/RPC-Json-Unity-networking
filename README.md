@@ -74,7 +74,7 @@ Acording to the specification response must return a object type, so our functio
 
 Lets see the client component:
 
-```
+```cs
 using UnityEngine;
 using System.Collections;
 using Unity_RPC;
