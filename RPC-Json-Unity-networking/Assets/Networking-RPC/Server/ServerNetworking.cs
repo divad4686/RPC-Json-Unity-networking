@@ -18,15 +18,16 @@ namespace Unity_RPC{
     public class ServerNetworking : IServer {
 
         // Server configuration
-        private int _port = 7777;
+        protected int _port;
         private int _maxConnections = 1000;
         private short messageType = 10000;
 
-        IRCPParser _rpcParser;
+        IRPCParser _rpcParser;
 
 
-        public ServerNetworking (IRCPParser rcpParser)
+        public ServerNetworking (IRPCParser rcpParser,int port)
         { 
+            _port = port;
             _rpcParser = rcpParser;
         }
 
@@ -71,15 +72,15 @@ namespace Unity_RPC{
             var message = netMes.ReadMessage<jsonStringMessage>();
 
             // By default the userId is the connection ID. This could be changed to use your own userID from Database or whatever, this is the main reason OnMessageReceived is Virtual
-            string userId = netMes.conn.connectionId.ToString();
+            int connectionId = netMes.conn.connectionId;
             _rpcParser.HandleMessage(message.json,
                 (result,actionId)=>
                 {
-                    sendResponse(userId,actionId,result);
+                    sendResponse(connectionId,actionId,result);
                 },
                 (actionId,errorData,e)=>
                 {
-                    sendResponseError(userId,actionId,errorData,e);
+                    sendResponseError(connectionId,actionId,errorData,e);
                 }
             );
         }
@@ -94,51 +95,44 @@ namespace Unity_RPC{
             // Can do stuff on child class    
         }
 
-        public void sendRequest(string userId,string method,string idAction,IDictionary<string,object> param = null)
+        public void sendRequest(int connectionId,string method,string idAction,IDictionary<string,object> param = null)
         {
             var json = _rpcParser.formatRequest(method,idAction,param);
-            sendToClient(userId,json);
+            sendToClient(connectionId,json);
         }
 
-        public void sendNotification(string userId,string method,IDictionary<string,object> param = null)
+        public void sendNotification(int connectionId,string method,IDictionary<string,object> param = null)
         {
             var json = _rpcParser.formatNotification(method,param);
-            sendToClient(userId,json);
+            sendToClient(connectionId,json);
         }
 
-        public void sendResponse(string userId,string idAction,object result)
+        public void sendResponse(int connectionId,string idAction,object result)
         {
             var json = _rpcParser.formatResponse(idAction,result);
-            sendToClient(userId,json);
+            sendToClient(connectionId,json);
         }
 
-        public void sendResponseError(string userId,string idAction,IDictionary<string,object>data, Exception e)
+        public void sendResponseError(int connectionId,string idAction,IDictionary<string,object>data, Exception e)
         {
             var json = _rpcParser.formatResponseError(idAction,data,e);
-            sendToClient(userId,json);
+            sendToClient(connectionId,json);
         }
 
-        protected virtual void sendToClient(string userId,string json)
+        protected virtual void sendToClient(int connectionId,string json)
         {            
             var message = new jsonStringMessage();
             message.json = json;
-            int connectionId = getConnectionIdForUser(userId);
             NetworkServer.SendToClient(connectionId,messageType,message);
-        }
-
-        protected virtual int getConnectionIdForUser(string userId)
-        {
-            // By default the user id is the same as the connection ID
-            return Int32.Parse(userId);
         }
     }
 
     public interface IServer
     {
         void CreateServer();
-        void sendRequest(string userId,string method,string idAction,IDictionary<string,object> param = null);
-        void sendNotification(string userId,string method,IDictionary<string,object> param = null);
-        void sendResponse(string userId,string idAction,object result);
-        void sendResponseError(string userId,string idAction,IDictionary<string,object>data,Exception e);
+        void sendRequest(int connectionId,string method,string idAction,IDictionary<string,object> param = null);
+        void sendNotification(int connectionId,string method,IDictionary<string,object> param = null);
+        void sendResponse(int connectionId,string idAction,object result);
+        void sendResponseError(int connectionId,string idAction,IDictionary<string,object>data,Exception e);
     }
 }

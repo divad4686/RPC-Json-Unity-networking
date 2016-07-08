@@ -15,7 +15,7 @@ public class ClientNetworkingComponent : MonoBehaviour {
         RPCHandler handler = new RPCHandler();
         RPCParser parser = new RPCParser(handler);
 
-        _client = new ClientNetworking(parser);
+        _client = new ClientNetworking(parser,"localhost",7777);
         _client.connect();
 
         handler.addResponseListener("numberResult",handleResult,handleError);

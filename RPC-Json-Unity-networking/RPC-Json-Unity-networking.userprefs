@@ -1,28 +1,31 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/UnitTesting/Editor/RPCManagerTest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Networking-RPC/Client/ClientNetworking.cs">
     <Files>
-      <File FileName="Assets/RPC Manager/IRPCHandler.cs" Line="26" Column="1" />
-      <File FileName="Assets/RPC Manager/RPCManager.cs" Line="32" Column="15" />
-      <File FileName="Assets/UnitTesting/Editor/RPCManagerTest.cs" Line="98" Column="2" />
+      <File FileName="Assets/Networking-RPC/Examples/Client/ClientNetworkingComponent.cs" Line="20" Column="9" />
+      <File FileName="Assets/Networking-RPC/RPC Manager/RPCParser.cs" Line="1" Column="1" />
+      <File FileName="Assets/Networking-RPC/Server/ServerNetworking.cs" Line="30" Column="26" />
+      <File FileName="Assets/Networking-RPC/Client/ClientNetworking.cs" Line="13" Column="18" />
+      <File FileName="Assets/Networking-RPC/Examples/Server/ServerComponent.cs" Line="26" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RPC-Json-Unity-networking" expanded="True">
             <Node name="Assembly-CSharp" expanded="True">
-              <Node name="RPC Manager" expanded="True" />
-              <Node name="Third party" expanded="True">
-                <Node name="MiniJSON" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Assembly-CSharp-Editor" expanded="True">
-              <Node name="UnitTesting" expanded="True">
-                <Node name="Editor" expanded="True">
-                  <Node name="RPCManagerTest.cs" selected="True" />
+              <Node name="Networking-RPC" expanded="True">
+                <Node name="Client" expanded="True">
+                  <Node name="ClientNetworking.cs" selected="True" />
                 </Node>
+                <Node name="Examples" expanded="True">
+                  <Node name="Client" expanded="True" />
+                  <Node name="Server" expanded="True" />
+                </Node>
+                <Node name="RPC Manager" expanded="True" />
+                <Node name="Server" expanded="True" />
               </Node>
             </Node>
+            <Node name="Assembly-CSharp-Editor" expanded="True" />
           </Node>
         </State>
       </Pad>

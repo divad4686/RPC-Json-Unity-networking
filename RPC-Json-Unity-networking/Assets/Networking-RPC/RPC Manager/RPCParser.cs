@@ -12,7 +12,7 @@ namespace Unity_RPC
     /// <summary>
     /// Parse data to a json string in case we need to send somethig, or parse a jsont-RPC formatted string and call the respective handler from the IRPCHandler
     /// </summary>
-    public class RPCParser : IRCPParser
+    public class RPCParser : IRPCParser
     {          
         IRPCHandler _handler;
         public RPCParser (IRPCHandler handler)
@@ -133,7 +133,7 @@ namespace Unity_RPC
         }
     }
 
-    public interface IRCPParser
+    public interface IRPCParser
     {        
         void HandleMessage(string json,SuccessRequest onSuccessRequest,ErrorRequest onErrorRequest);
         string formatRequest(string method,string idAction,IDictionary<string,object> param = null);

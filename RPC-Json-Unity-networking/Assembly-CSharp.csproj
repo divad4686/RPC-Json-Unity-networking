@@ -45,10 +45,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Example\Client\ClientNetworkingComponent.cs" />
-     <Compile Include="Assets\Example\Server\Calculator.cs" />
-     <Compile Include="Assets\Example\Server\ServerComponent.cs" />
      <Compile Include="Assets\Networking-RPC\Client\ClientNetworking.cs" />
+     <Compile Include="Assets\Networking-RPC\Examples\Client\ClientNetworkingComponent.cs" />
+     <Compile Include="Assets\Networking-RPC\Examples\Server\Calculator.cs" />
+     <Compile Include="Assets\Networking-RPC\Examples\Server\ServerComponent.cs" />
      <Compile Include="Assets\Networking-RPC\RPC Manager\RPCHandler.cs" />
      <Compile Include="Assets\Networking-RPC\RPC Manager\RPCParser.cs" />
      <Compile Include="Assets\Networking-RPC\Server\ServerNetworking.cs" />

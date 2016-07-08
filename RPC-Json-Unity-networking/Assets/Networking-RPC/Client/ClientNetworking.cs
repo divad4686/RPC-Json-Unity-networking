@@ -8,14 +8,16 @@ using System;
 namespace Unity_RPC{
     public class ClientNetworking {
         private short msgTypeId = 10000;
-        private string _ip = "localhost";
-        private int _port = 7777;
-        private NetworkClient _client;
+        protected string _ip;
+        protected int _port;
+        protected NetworkClient _client;
 
-        IRCPParser _rcpParser;
+        IRPCParser _rcpParser;
 
-        public ClientNetworking(IRCPParser parser)
+        public ClientNetworking(IRPCParser parser, string ip,int port)
         {
+            _port = port;
+            _ip = ip;
             _rcpParser = parser;
 
             var config = new ConnectionConfig ();
@@ -29,7 +31,7 @@ namespace Unity_RPC{
             RegisterHandlers ();
         }
 
-        public void connect()
+        public virtual void connect()
         {
             _client.Connect (_ip, _port);
         }

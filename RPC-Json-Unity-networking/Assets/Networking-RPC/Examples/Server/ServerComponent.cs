@@ -14,10 +14,10 @@ public class ServerComponent : MonoBehaviour {
 
         // RPC
         RPCHandler handler = new RPCHandler();
-        IRCPParser rpcParser = new RPCParser(handler);
+        IRPCParser rpcParser = new RPCParser(handler);
 
         // Server
-        ServerNetworking server = new ServerNetworking(rpcParser);
+        ServerNetworking server = new ServerNetworking(rpcParser,7777);
         server.CreateServer();
 
         Calculator calc = new Calculator(handler);

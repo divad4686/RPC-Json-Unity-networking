@@ -45,8 +45,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\UnitTesting\Editor\CalculatorTest.cs" />
-     <Compile Include="Assets\UnitTesting\Editor\RCPParserTest.cs" />
+     <Compile Include="Assets\Networking-RPC\UnitTesting\Editor\CalculatorTest.cs" />
+     <Compile Include="Assets\Networking-RPC\UnitTesting\Editor\RCPParserTest.cs" />
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
@@ -71,6 +71,9 @@
  <Reference Include="UnityEditor.TreeEditor">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll</HintPath>
  </Reference>
+ <Reference Include="NSubstitute">
+ <HintPath>/Users/antoniocabanas/RPC-Json-Unity-networking/RPC-Json-Unity-networking/Assets/Networking-RPC/UnitTesting/UnityTestTools/UnitTesting/Editor/NSubstitute/NSubstitute.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Graphs">
  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll</HintPath>
  </Reference>
@@ -85,9 +88,6 @@
  </Reference>
  <Reference Include="UnityEditor.OSXStandalone.Extensions">
  <HintPath>/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll</HintPath>
- </Reference>
- <Reference Include="NSubstitute">
- <HintPath>/Users/antoniocabanas/RPC-Json-Unity-networking/RPC-Json-Unity-networking/Assets/UnitTesting/UnityTestTools/UnitTesting/Editor/NSubstitute/NSubstitute.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.iOS.Extensions.Xcode">
  <HintPath>/Applications/Unity/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
