@@ -7,12 +7,12 @@ using System;
 
 namespace Unity_RPC{
     public class ClientNetworking {
-        private short msgTypeId = 10000;
+        protected short msgTypeId = 10000;
         protected string _ip;
         protected int _port;
         protected NetworkClient _client;
 
-        IRPCParser _rcpParser;
+        protected IRPCParser _rcpParser;
 
         public ClientNetworking(IRPCParser parser, string ip,int port)
         {

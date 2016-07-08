@@ -22,7 +22,7 @@ namespace Unity_RPC{
         private int _maxConnections = 1000;
         private short messageType = 10000;
 
-        IRPCParser _rpcParser;
+        protected IRPCParser _rpcParser;
 
 
         public ServerNetworking (IRPCParser rcpParser,int port)
