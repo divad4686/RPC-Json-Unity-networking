@@ -1,7 +1,7 @@
 # RPC-Json-Unity-networking
 Example of client and server handling messages using the RPC-Json protocol and Unity networking 
 
-The main code is inside Assets folder.
+The main code is inside [Assets folder](https://github.com/divad4686/RPC-Json-Unity-networking/tree/master/RPC-Json-Unity-networking/Assets) 
 
 This is a implementation of a module I made on the game I'm working on to send messages between my clients and the server, using Unity networking to send messages formatted with the [Json-RPC specification 2.0](http://www.jsonrpc.org/specification)
 
