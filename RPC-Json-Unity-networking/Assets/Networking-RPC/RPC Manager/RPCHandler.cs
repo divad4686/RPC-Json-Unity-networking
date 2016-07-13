@@ -57,18 +57,18 @@ namespace Unity_RPC
 
         public void addNotificationListener (string method, NotificationAction onNotification)
         {
-            notifications.Add(method,onNotification);
+            notifications[method] = onNotification;
         }
 
         public void addRequestListener (string method, RequestAction onRequest)
         {
-            requests.Add(method,onRequest);
+            requests[method] = onRequest;
         }
 
         public void addResponseListener (string idAction, ResponseAction onResponse, ErrorAction onError)
         {
-            responses.Add(idAction,onResponse);
-            errors.Add(idAction,onError);
+            responses[idAction] = onResponse;
+            errors[idAction] = onError;
         }
 
         #endregion
