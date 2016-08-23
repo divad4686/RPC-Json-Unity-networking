@@ -1,12 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj" RefactoringSettings.EnableRefactorings="True">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Networking-RPC/Server/ServerNetworking.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Networking-RPC/RPC Manager/RPCHandler.cs">
     <Files>
-      <File FileName="Assets/Networking-RPC/RPC Manager/RPCParser.cs" Line="15" Column="35" />
       <File FileName="Assets/Networking-RPC/Examples/Client/ClientNetworkingComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Networking-RPC/RPC Manager/RPCParser.cs" Line="1" Column="1" />
       <File FileName="Assets/Networking-RPC/Server/ServerNetworking.cs" Line="25" Column="19" />
-      <File FileName="Assets/Networking-RPC/Client/ClientNetworking.cs" Line="10" Column="18" />
+      <File FileName="Assets/Networking-RPC/Client/ClientNetworking.cs" Line="1" Column="1" />
       <File FileName="Assets/Networking-RPC/Examples/Server/ServerComponent.cs" Line="1" Column="1" />
+      <File FileName="Assets/Networking-RPC/RPC Manager/RPCHandler.cs" Line="69" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,15 +16,18 @@
             <Node name="Assembly-CSharp" expanded="True">
               <Node name="Networking-RPC" expanded="True">
                 <Node name="Client" expanded="True" />
-                <Node name="RPC Manager" expanded="True" />
-                <Node name="Server" expanded="True">
-                  <Node name="ServerNetworking.cs" selected="True" />
+                <Node name="RPC Manager" expanded="True">
+                  <Node name="RPCHandler.cs" selected="True" />
                 </Node>
+                <Node name="Server" expanded="True" />
               </Node>
             </Node>
             <Node name="Assembly-CSharp-Editor" expanded="True" />
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State name="__root__">
